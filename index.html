@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="Product.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="header-content">
+          <img src="images/icon-menu.svg" alt="Menu" class="menu" id="menu">
+          <div class="menu-navigation hidden" id="navigationPopup"> 
+            <div class="nav-pop">
+              <img src="images/icon-close.svg" alt="Close" class="close-menu" id="closeMenu">
+              <p class="navigation-menu">Collections</p>
+              <p class="navigation-menu">Men</p>
+              <p class="navigation-menu">Women</p>
+              <p class="navigation-menu">About</p>
+              <p class="navigation-menu">Contact</p>
+            </div>
+          </div>
+
+          <img src="images/logo.svg" alt="Logo" class="logo">
+
+          <div class="header-navigation">
+            <p class="navigation">Collections</p>
+            <p class="navigation">Men</p>
+            <p class="navigation">Women</p>
+            <p class="navigation">About</p>
+            <p class="navigation">Contact</p>
+          </div>
+        </div>
+
+        <div class="cart-avatar">
+          <img src="images/icon-cart.svg" alt="Cart" class="cart" id="cart">
+          <div class="product-quantity hidden">
+            <p class="product-quantity-number"></p>
+          </div>
+          <div class="cart-popup-holder hidden" id="cartPopup">
+            <p class="cart-popup">Cart</p>
+            <hr class="hr-cart">
+            <p class="empty-cart" id="emptyCart">Your cart is empty.</p>
+            <div class="full-cart hidden" id="fullCart">
+              <img src="images/image-product-1-thumbnail.jpg" alt="Product Sneakers" class="cart-img">
+              <div class="price">
+                <div>
+                  <p class="p-cart">Fall Limited Edition Sneakers</p>
+                  <p class="p-price">$125.00 x <span id="number">3</span><span id="finalPrice">$375.00</span></p>
+                </div>
+                <img src="images/icon-delete.svg" alt="Delete" id="delete">
+              </div>
+              <button class="checkout-button checkout-button-cart">Checkout</button>
+            </div>
+          </div>
+          <img src="images/image-avatar.png" alt="Avatar" class="avatar">
+        </div>
+      </header>
+
+      <hr class="hr">
+
+      <div class="mobile">
+        <div class="section-article-holder">
+          <section class="section mainSection">
+            <img src="images/image-product-1.jpg" alt="Image Product 1" class="product img1">
+            <img src="images/image-product-2.jpg" alt="Image Product 2" class="product hidden img2">
+            <img src="images/image-product-3.jpg" alt="Image Product 3" class="product hidden img3">
+            <img src="images/image-product-4.jpg" alt="Image Product 4" class="product hidden img4">
+  
+            <div class="thumbnail-holder">
+              <button class="btn-holder" id="thumbnail1">
+                <img src="images/image-product-1-thumbnail.jpg" alt="Image Product 1 Thumbnail" class="thumbnail outline"
+                  data-img="img1">
+              </button>
+              <button class="btn-holder" id="thumbnail2">
+                <img src="images/image-product-2-thumbnail.jpg" alt="Image Product 2 Thumbnail" class="thumbnail"
+                  data-img="img2">
+              </button>
+              <button class="btn-holder" id="thumbnail3">
+                <img src="images/image-product-3-thumbnail.jpg" alt="Image Product 3 Thumbnail" class="thumbnail"
+                  data-img="img3">
+              </button>
+              <button class="btn-holder" id="thumbnail4">
+                <img src="images/image-product-4-thumbnail.jpg" alt="Image Product 4 Thumbnail" class="thumbnail"
+                  data-img="img4">
+              </button>
+            </div>
+          </section>
+  
+          <div class="mobile">
+              <article class="article">
+                <h2 class="h2">Sneaker Company</h2>
+                <h1 class="h1">Fall Limited Edition Sneakers</h1>
+    
+                <p class="p">
+                  These low-profile sneakers are your perfect casual wear companion. Featuring a
+                  durable rubber outer sole, they&#x2019;ll withstand everything the weather can offer.
+                </p>
+    
+                <div class="pricing-holder">
+                  <div class="discount-holder">
+                    <p class="cheapest">$125.00</p>
+                    <span class="discount">50%</span>
+                  </div>
+                  <p class="original-price">$250.00</p>
+                </div>
+    
+                <div class="checkout-holder">
+                  <div class="plus-minus">
+                    <button class="quantity" id="minus"><img src="images/icon-minus.svg" alt="Minus"
+                        class="btn-image"></button>
+                    <p class="number" id="value">0</p>
+                    <button class="quantity" id="plus"><img src="images/icon-plus.svg" alt="Plus" class="btn-image"></button>
+                  </div>
+                  <button class="checkout-button" id="mainButton"><img src="images/icon-cart.svg" alt="Cart"
+                      class="cart-button">Add to cart</button>
+                </div>
+              </article>
+          </div>
+        </div>
+  
+        <section class="section pop-holder hidden" id="popUp">
+          <div class="popup-x">
+            <img src="images/icon-close.svg" alt="Close" class="close" id="close">
+    
+            <div class="nav-image-holder">
+              <button class="nav-image previous" id="previous">
+                <img src="images/icon-previous.svg" alt="Previous" class="previous-inside">
+              </button>
+              <button class="nav-image next" id="next">
+                <img src="images/icon-next.svg" alt="Next" class="next-inside">
+              </button>
+            </div>
+    
+            <img src="images/image-product-1.jpg" alt="Image Product 1" class="product product-popup img1" data-number="1">
+            <img src="images/image-product-2.jpg" alt="Image Product 2" class="product product-popup hidden img2"
+              data-number="2">
+            <img src="images/image-product-3.jpg" alt="Image Product 3" class="product product-popup hidden img3"
+              data-number="3">
+            <img src="images/image-product-4.jpg" alt="Image Product 4" class="product product-popup hidden img4"
+              data-number="4">
+          </div>
+    
+          <div class="thumbnail-holder pop-thumbnail">
+            <button class="btn-holder thumbnail1popup" id="thumbnail1">
+              <img src="images/image-product-1-thumbnail.jpg" alt="Image Product 1 Thumbnail"
+                class="thumbnail thumbnail-popup outline outline-popup" data-img="img1" data-outline="1">
+            </button>
+            <button class="btn-holder" id="thumbnail2">
+              <img src="images/image-product-2-thumbnail.jpg" alt="Image Product  2 Thumbnail"
+                class="thumbnail thumbnail-popup outline-popup" data-img="img2" data-outline="2">
+            </button>
+            <button class="btn-holder" id="thumbnail3">
+              <img src="images/image-product-3-thumbnail.jpg" alt="Image Product 3 Thumbnail"
+                class="thumbnail thumbnail-popup outline-popup" data-img="img3" data-outline="3">
+            </button>
+            <button class="btn-holder" id="thumbnail4">
+              <img src="images/image-product-4-thumbnail.jpg" alt="Image Product 4 Thumbnail"
+                class="thumbnail thumbnail-popup outline-popup" data-img="img4" data-outline="4">
+            </button>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </body>
+
+  <script src="Product.js"></script>
+</html>
