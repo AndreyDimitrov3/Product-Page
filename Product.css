@@ -396,9 +396,10 @@
 .nav-image-holder{
     display: flex;
     justify-content: space-between;
-    transform: translate( 0, 498%);
     width: 112%;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     left: -6%;
 }
 
@@ -680,20 +681,12 @@
 }
 
 @media (max-width: 420px){
-    .nav-image-holder{
-        transform: translate(0, 300%);
-    }
-
     .nav-image{
         background-color: white;
     }
 }
 
 @media (max-width: 380px){
-    .nav-image-holder{
-        transform: translate(0, 290%);
-    }
-
     .cart-popup-holder{
         width: 325px;
         height: 200px;
@@ -702,10 +695,6 @@
 }
 
 @media (max-width: 340px){
-    .nav-image-holder{
-        transform: translate(0, 285%);
-    }
-
     .cart-popup-holder{
         width: 300px;
     }
